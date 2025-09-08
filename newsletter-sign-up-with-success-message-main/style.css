@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.main-container  {
+    background-color: #36384d;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.form-container {
+    background-color: white;
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    
+    box-sizing: border-box;
+}
+
+.illustration {
+    background-image: url('assets/images/illustration-sign-up-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: auto;
+    min-height: 500px;
+}
+
+.mobile-illustration {
+    display: none;
+}
+
+.pop-up {
+    display: none;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pop-up p {
+    font-size: 12px;
+}
+
+.pop-up h2 {
+    padding-bottom: 20px;
+    font-size: 27px;
+}
+
+.pop-up img {
+    width: 50px;
+    padding-bottom: 20px;
+}
+
+.dismiss-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #232742;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.dismiss-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #ff5572, #fe5d5e, #ff6644);
+
+}
+
+h2 {
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+form span {
+    
+    
+}
+
+.list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    line-height: 1.5;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    outline: none;
+    border: 1.5px solid darkgray;
+    text-indent: 20px;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    
+    
+}
+/*togggles on with js*/
+.js-class {
+    background-color: #ffe8e6;
+    color: red;
+    border-color: red;
+}
+
+.email-span {
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.email-error {
+    color: red;
+    display: none;
+}
+
+button, input {
+    border-radius: 12px;
+}
+
+form button {
+    width: 400px;
+    height: 51px;
+    background-color: #232742;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    margin-top: 10px;
+    border: 1.5px;
+    
+}
+
+.email-txt {
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    
+  }
+  
+
+@media (max-width: 600px) {
+
+    body {
+        font-weight: lighter;
+        font-size: 14px;
+        
+    }
+
+    .main-container {
+        
+        align-items: normal;
+        height: 100%;
+    }
+    .card {
+        display: block;
+        width: 100vw;
+        height: 98vh;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    input {
+        width: 250px;
+        border-radius: 10px;
+        height: 40px;
+    }
+
+    form button {
+        width: 250px;
+        border-radius: 10px;
+        height: 40px;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .mobile-illustration {
+        display: block;
+        background-image: url('assets/images/illustration-sign-up-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 250px;
+        
+
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: -30px;
+    }
+
+    .pop-up {
+        height: 100vh;
+        max-height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+        padding-top: 150px;
+        box-sizing: border-box;
+    }
+
+    .pop-up img {
+        padding-bottom: 70px;
+
+    }
+
+    .pop-up h2 {
+        font-size: 30px;
+    }
+
+    .pop-up button {
+        margin-top: 80%;
+    }
+
+    .pop b {
+        font-weight: 400;
+    }
+
+    .email-error {
+        margin-right: 20px;
+    }
+}
